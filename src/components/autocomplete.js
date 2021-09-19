@@ -46,7 +46,7 @@ class Autocomplete {
   _registerWidgets() {
     this._searchInstance.addWidgets([
       configure({
-        hitsPerPage: 2,
+        hitsPerPage: 3,
       }),
       searchBox({
         container: '#searchbox',
