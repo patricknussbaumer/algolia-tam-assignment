@@ -28,12 +28,12 @@ class Autocomplete {
    */
   _registerClient() {
     this._searchClient = algoliasearch(
-      'VYLEWMPKEZ',
-      '8940a18fde155adf3f74b0912c267aa4'
+      'FNSGMRR5FU',
+      'ba5314fb4d8213183d5a71f1246b1749'
     );
 
     this._searchInstance = instantsearch({
-      indexName: 'ecommerce-v2',
+      indexName: 'Product',
       searchClient: this._searchClient,
     });
   }
@@ -46,7 +46,7 @@ class Autocomplete {
   _registerWidgets() {
     this._searchInstance.addWidgets([
       configure({
-        hitsPerPage: 3,
+        hitsPerPage: 2,
       }),
       searchBox({
         container: '#searchbox',
